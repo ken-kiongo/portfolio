@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ken Kiongo — Web Developer & Tech-Savvy Virtual Assistant</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Cabinet+Grotesk:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>KK<span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span>Available for hire</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#work" class="mobile-link">Work</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text" aria-hidden="true">DEVOPS</div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-line"></span>
+        <span>Web Developer + Tech-Savvy VA</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line" data-delay="0">Building</span>
+        <span class="line accent-line" data-delay="100">Digital</span>
+        <span class="line" data-delay="200">Systems.</span>
+      </h1>
+
+      <p class="hero-sub">
+        I'm Ken Kiongo — a Web Developer &amp; Tech-Savvy Virtual Assistant from Kenya. I build websites, automate workflows, and help businesses operate smarter online.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#work" class="btn-primary">
+          <span>View My Work</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="40">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Remote-Ready</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">ken@kiongo:~</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+          <div class="terminal-output typing-1">Ken Kiongo — Web Dev &amp; Tech VA</div>
+          <div class="terminal-line t2"><span class="prompt">$</span> <span class="cmd">skills --list</span></div>
+          <div class="terminal-output typing-2">→ WordPress, Shopify, WooCommerce</div>
+          <div class="terminal-output typing-3">→ React, Node.js, MongoDB (MERN)</div>
+          <div class="terminal-output typing-4">→ n8n, Zapier, Make.com, CRMs</div>
+          <div class="terminal-line t3"><span class="prompt">$</span> <span class="cmd">status</span></div>
+          <div class="terminal-output typing-5 green-text">✓ Open to new projects</div>
+          <div class="terminal-cursor">█</div>
+        </div>
+      </div>
+
+      <div class="floating-badge badge-1">
+        <span>⚡</span> Fast Delivery
+      </div>
+      <div class="floating-badge badge-2">
+        <span>🔒</span> Reliable Setup
+      </div>
+      <div class="floating-badge badge-3">
+        <span>🌍</span> Remote-Ready
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span>About Me</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="about-img-wrap">
+            <div class="about-img-bg"></div>
+            <div class="about-img-box">
+              <img src="images/profile-placeholder.jpg" alt="Ken Kiongo" class="profile-photo" />
+            </div>
+            <div class="about-img-tag">
+              <span class="tag-icon">💻</span>
+              <div>
+                <strong>Ken Kiongo</strong>
+                <small>Nairobi, Kenya 🇰🇪</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <h2 class="section-title">Structured.<br>Detail-Oriented.<br><em>Results-Driven.</em></h2>
+
+          <p class="about-text">
+            I'm a Web Developer and Tech-Savvy Virtual Assistant with a Computer Science degree and over 5 years of freelancing experience. My work sits at the intersection of technology, automation, and business operations — I don't just build websites, I create systems that help businesses operate more efficiently and grow online.
+          </p>
+          <p class="about-text">
+            I've worked with entrepreneurs, agencies, and growing companies across WordPress, Shopify, WooCommerce, MERN stack development, and business automation. I work independently, manage technical infrastructure, troubleshoot complex issues, and translate business needs into reliable technical solutions.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Web Development</h4>
+              <div class="skill-tags">
+                <span>WordPress</span><span>Shopify</span><span>WooCommerce</span>
+                <span>Webflow</span><span>Elementor</span><span>HTML/CSS</span>
+                <span>JavaScript</span><span>React</span><span>Node.js</span>
+                <span>MongoDB</span><span>Express.js</span><span>REST APIs</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Automation & CRMs</h4>
+              <div class="skill-tags">
+                <span>n8n</span><span>Zapier</span><span>Make.com</span>
+                <span>GoHighLevel</span><span>HubSpot</span><span>Zoho CRM</span>
+                <span>Keap</span><span>Agile CRM</span><span>Airtable</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Tech Operations & Tools</h4>
+              <div class="skill-tags">
+                <span>DNS / Cloudflare</span><span>Hostinger</span>
+                <span>Google Workspace</span><span>Yoast SEO</span>
+                <span>Google Analytics</span><span>Meta Pixel</span>
+                <span>Trello</span><span>Asana</span><span>ClickUp</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary">
+            <span>Work With Me</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span>What I Do</span>
+      </div>
+      <h2 class="section-title centered">Services Built <br><em>for Results</em></h2>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-index="01">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Website Development</h3>
+          <p>Custom, responsive websites on WordPress, Shopify, or Webflow — built for speed, SEO, and conversions. From landing pages to full business sites.</p>
+          <ul class="service-list">
+            <li>WordPress & Elementor</li>
+            <li>Shopify Store Development</li>
+            <li>Webflow Management</li>
+            <li>Landing Page Design</li>
+            <li>SEO Setup & Optimization</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured" data-index="02">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>eCommerce Development</h3>
+          <p>Full WooCommerce and Shopify store setup — from product catalog to payment gateways, shipping, and ongoing backend management.</p>
+          <ul class="service-list">
+            <li>WooCommerce Store Setup</li>
+            <li>Shopify Store Setup</li>
+            <li>Variable & Bundle Products</li>
+            <li>Payment & Shipping Config</li>
+            <li>Shopify → WooCommerce Migration</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-index="03">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+          </div>
+          <h3>Automation & Systems</h3>
+          <p>Workflow automation using n8n, Zapier, and Make.com — connecting your CRM, website, and tools to eliminate manual work and boost efficiency.</p>
+          <ul class="service-list">
+            <li>n8n Workflow Automation</li>
+            <li>Zapier / Make.com Flows</li>
+            <li>CRM Automation & Setup</li>
+            <li>API & Webhook Integrations</li>
+            <li>Business Process Automation</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-index="04">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Technical Virtual Assistance</h3>
+          <p>Reliable backend support — website management, CRM operations, eCommerce, and research. Available across time zones with a fully redundant setup.</p>
+          <ul class="service-list">
+            <li>Website Backend Management</li>
+            <li>CRM & Pipeline Management</li>
+            <li>eCommerce Operations</li>
+            <li>Data & Research Support</li>
+            <li>DNS / Hosting / Tech Support</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Portfolio Section -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">03</span>
+        <span>Work Samples</span>
+      </div>
+      <h2 class="section-title centered">Selected <em>Projects</em></h2>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="ecom">eCommerce</button>
+        <button class="filter-btn" data-filter="auto">Automation</button>
+        <button class="filter-btn" data-filter="va">VA / IT</button>
+      </div>
+
+      <div class="work-grid" id="workGrid">
+
+        <div class="work-card" data-category="ecom">
+          <div class="work-img">
+            <div class="work-img-placeholder p1">
+              <span>🛒</span>
+              <div class="work-img-lines"><div></div><div></div><div></div></div>
+            </div>
+            <div class="work-overlay">
+              <a href="projects/woocommerce-migration.html" class="work-link">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-tags">
+              <span>Shopify</span><span>WooCommerce</span><span>SEO</span>
+            </div>
+            <h3><a href="projects/woocommerce-migration.html" class="card-title-link">WooCommerce Store Migration & Optimization</a></h3>
+            <p>Migrated an eCommerce store from Shopify to WooCommerce. Configured variable products, bundle pricing, shipping zones, and payment gateways, plus a full store audit and SEO optimization.</p>
+            <div class="work-meta">
+              <span class="work-result">✓ Fixed product variations, improved SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card featured-work" data-category="ecom">
+          <div class="work-img">
+            <div class="work-img-placeholder p2">
+              <span>🏪</span>
+              <div class="work-img-lines"><div></div><div></div><div></div></div>
+            </div>
+            <div class="work-overlay">
+              <a href="projects/shopify-setup.html" class="work-link">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-tags">
+              <span>Shopify</span><span>Apps</span><span>Payments</span>
+            </div>
+            <h3><a href="projects/shopify-setup.html" class="card-title-link">Shopify Store Setup & Optimization</a></h3>
+            <p>Built and configured a complete Shopify store — product catalog, payment gateways, shipping rules, and essential app integrations to streamline store management.</p>
+            <div class="work-meta">
+              <span class="work-result">✓ Full store setup & optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card" data-category="web">
+          <div class="work-img">
+            <div class="work-img-placeholder p3">
+              <span>🌐</span>
+              <div class="work-img-lines"><div></div><div></div><div></div></div>
+            </div>
+            <div class="work-overlay">
+              <a href="projects/wordpress-website.html" class="work-link">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-tags">
+              <span>WordPress</span><span>Elementor</span><span>SEO</span>
+            </div>
+            <h3><a href="projects/wordpress-website.html" class="card-title-link">WordPress Business Website Development</a></h3>
+            <p>Developed a fully responsive WordPress business website using Elementor, with custom page design, SEO configuration, performance optimization, and analytics tracking.</p>
+            <div class="work-meta">
+              <span class="work-result">✓ Mobile-first, fast, SEO-ready</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card" data-category="ecom">
+          <div class="work-img">
+            <div class="work-img-placeholder p4">
+              <span>📦</span>
+              <div class="work-img-lines"><div></div><div></div><div></div></div>
+            </div>
+            <div class="work-overlay">
+              <a href="projects/woocommerce-management.html" class="work-link">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-tags">
+              <span>WooCommerce</span><span>Variable Products</span><span>Shipping</span>
+            </div>
+            <h3><a href="projects/woocommerce-management.html" class="card-title-link">WooCommerce Store Management</a></h3>
+            <p>Ongoing technical management for an online store with 50+ mostly variable products and global shipping. Handled catalog, shipping troubleshooting, checkout fixes, and backend optimization.</p>
+            <div class="work-meta">
+              <span class="work-result">✓ 50+ products, global shipping</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card" data-category="auto">
+          <div class="work-img">
+            <div class="work-img-placeholder p5">
+              <span>⚙️</span>
+              <div class="work-img-lines"><div></div><div></div><div></div></div>
+            </div>
+            <div class="work-overlay">
+              <a href="projects/workflow-automation.html" class="work-link">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-tags">
+              <span>n8n</span><span>Zapier</span><span>CRM</span>
+            </div>
+            <h3><a href="projects/workflow-automation.html" class="card-title-link">Business Workflow Automation Systems</a></h3>
+            <p>Designed automation workflows connecting CRM platforms, websites, and operational tools — eliminating manual processes, improving data visibility, and automating repetitive tasks.</p>
+            <div class="work-meta">
+              <span class="work-result">✓ Reduced manual workload significantly</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card" data-category="va">
+          <div class="work-img">
+            <div class="work-img-placeholder p6">
+              <span>🖥️</span>
+              <div class="work-img-lines"><div></div><div></div><div></div></div>
+            </div>
+            <div class="work-overlay">
+              <a href="projects/va-operations.html" class="work-link">View Case Study →</a>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-tags">
+              <span>CRM</span><span>Tech Support</span><span>Operations</span>
+            </div>
+            <h3><a href="projects/va-operations.html" class="card-title-link">Tech-Savvy VA & Operations Support</a></h3>
+            <p>Backend technical VA support for online businesses — website management, CRM operations, eCommerce backend, DNS/hosting, and data research across time zones.</p>
+            <div class="work-meta">
+              <span class="work-result">✓ Multi-timezone availability</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Reliability Section -->
+  <section class="reliability">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">04</span>
+        <span>Reliability</span>
+      </div>
+      <h2 class="section-title centered">You Can Count <em>On Me.</em></h2>
+      <p class="reliability-sub">I take availability seriously. My setup is engineered for zero downtime so your work never stops.</p>
+
+      <div class="reliability-grid">
+        <div class="reliability-card">
+          <div class="rel-icon">💻</div>
+          <h4>Backup Laptop</h4>
+          <p>Secondary machine ready to go instantly if any hardware issues arise.</p>
+        </div>
+        <div class="reliability-card">
+          <div class="rel-icon">🌐</div>
+          <h4>Backup Internet</h4>
+          <p>Secondary connection ensures I stay online regardless of ISP disruptions.</p>
+        </div>
+        <div class="reliability-card">
+          <div class="rel-icon">⚡</div>
+          <h4>Backup Power</h4>
+          <p>Power backup prevents work interruptions during outages.</p>
+        </div>
+        <div class="reliability-card">
+          <div class="rel-icon">🕐</div>
+          <h4>Multi-Timezone</h4>
+          <p>Available most hours of the day to support clients across different time zones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">05</span>
+        <span>Get In Touch</span>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 class="section-title">Let's Build<br>Something <em>Great.</em></h2>
+          <p>Whether you need a website, eCommerce store, automation system, or reliable technical VA support — I'm ready to help. Let's start a conversation.</p>
+
+          <div class="contact-details">
+            <a href="mailto:qenkiongo@gmail.com" class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <span>qenkiongo@gmail.com</span>
+            </a>
+            <a href="https://wa.me/254768608430" target="_blank" class="contact-item">
+              <div class="contact-icon whatsapp-icon">
+                <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.49 2.027 7.8L0 32l8.418-2.004A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.77-1.853l-.486-.29-5.002 1.192 1.257-4.863-.317-.5A13.267 13.267 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.199-2.354-1.161-2.72-1.294-.365-.133-.631-.199-.897.199-.266.398-1.03 1.294-1.263 1.56-.232.266-.465.299-.863.1-.398-.199-1.681-.62-3.203-1.977-1.184-1.057-1.983-2.362-2.215-2.76-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.698.199-.232.266-.398.398-.664.133-.266.066-.498-.033-.697-.1-.199-.897-2.162-1.229-2.96-.324-.777-.653-.672-.897-.684l-.764-.013c-.266 0-.697.1-1.063.498-.365.398-1.395 1.362-1.395 3.325s1.428 3.856 1.627 4.122c.199.266 2.81 4.29 6.808 6.017.951.411 1.694.656 2.273.839.955.304 1.824.261 2.511.158.766-.114 2.354-.963 2.686-1.893.332-.93.332-1.727.232-1.893-.1-.166-.365-.266-.763-.465z"/></svg>
+              </div>
+              <span>+254 768 608 430</span>
+            </a>
+            <a href="https://ke.linkedin.com/in/kenkiongo" target="_blank" class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <span>linkedin.com/in/kenkiongo</span>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span>Nairobi, Kenya 🇰🇪 — Available Worldwide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xgopeanr" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed <span class="required">*</span></label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <option>WordPress Website Development</option>
+                <option>Shopify Store Development</option>
+                <option>WooCommerce Store Setup</option>
+                <option>Workflow Automation (n8n / Zapier)</option>
+                <option>CRM Setup &amp; Automation</option>
+                <option>Tech-Savvy Virtual Assistance</option>
+                <option>Website Maintenance</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✓ Message sent! I'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="nav-logo">
+          <span class="logo-bracket">[</span>KK<span class="logo-bracket">]</span>
+        </div>
+        <p>Web Developer & Tech-Savvy Virtual Assistant — Nairobi, Kenya</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ken Kiongo. All rights reserved.</span>
+        <span class="footer-made">Crafted with <span class="heart">♥</span> & code</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
